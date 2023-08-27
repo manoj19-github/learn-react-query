@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navbar-main{
+  width:100%;
+  margin-bottom: 10px;
+  padding:5px 20px;
+}
+.navlist{
+  width:100%;
+  display:flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.navlist li >a {
+  color:gray;
+  font-size:18px;
+  text-decoration: none;
+  border-bottom:1px solid transparent;
+  transition: 0.7s all ease-in;
+
+}
+.navlist li >a:hover {
+  color:#272662;
+  border-bottom:1px solid #272662;
+}

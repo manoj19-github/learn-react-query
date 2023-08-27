@@ -83,3 +83,8 @@ const setToken = async (token: string) => {
 // 403=> expaired
 // 500=> system exception
 // 200=> succes and business error
+
+
+export const serviceClient = new RestService({
+  baseURL: 'http://localhost:5000',
+});
