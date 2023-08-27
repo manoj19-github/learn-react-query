@@ -10,7 +10,12 @@ const Products = () => {
     error,
   }: { isLoading: boolean; data: any; isError: boolean; error: any } = useQuery(
     "get-products",
-    getProductsService
+    getProductsService,
+    {
+      cacheTime:5000,
+      staleTime:60*1000
+      // refetchInterval:2000
+    }
   );
   if (isLoading) {
     return <div>Products Loading please wait ....</div>;
